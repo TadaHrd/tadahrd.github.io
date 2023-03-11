@@ -18,9 +18,9 @@
 
 .main-title {
     margin: 0 1rem 00 1rem;
-    
+
     padding: 1rem 0;
-    
+
     font-size: 2.5rem;
     text-align: center;
 }
@@ -32,15 +32,15 @@
 .navbar-item {
     display: flex;
     align-items: center;
-    
+
     padding: 0 15px;
-    
+
     color: var(--text-color);
     font-size: larger;
     text-decoration: none;
-    
+
     font-family: "Segoe UI";
-    
+
     transition: color 0.2s;
 }
 @media (max-width: 630px) {
@@ -75,9 +75,9 @@
 
 .project {
     background-color: var(--card-color);
-    
+
     border-radius: 10px;
-    
+
     padding: 10px;
     margin: 40px;
 }
@@ -94,9 +94,9 @@
     text-decoration: underline;
     font-size: 2rem;
     text-align: center;
-    
+
     margin: auto;
-    
+
     transition: color 0.4;
 }
 .project-name:hover {
@@ -118,20 +118,20 @@
 .link-to-run {
     font-family: "Fira code";
     font-size: 16px;
-    
+
     margin: 5px;
     padding: 10px;
     float: right;
-    
+
     border: none;
     border-radius: 5px;
-    
+
     color: var(--text-color);
     background-color: var(--link-color);
 }
 .link-to-run:hover {
     cursor: pointer;
-    
+
     color: var(--text-hover-color);
     background-color: var(--dark-link-color);
 }

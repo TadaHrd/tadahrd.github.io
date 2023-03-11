@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="styles/colors.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/elements.css">
+    
+    <title>TadaHrd main page</title>
+</head>
+<body class="bg-dark">
+    <div class="top">
+        <a href="#"><h1 class="main-title white-text font-fira-code">TadaHrd's page</h1></a>
+        <nav>
+            <a href="#projects" class="navbar-item">Projects</a>
+            <a href="https://github.com/tadaHrd" class="navbar-item">Github &nbsp;<svg width="20px" height="20px" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48H0z" fill="none"/><g><polygon points="40,38 8,38 8,10 20,10 20,6 4,6 4,42 44,42 44,30 40,30  "/><polygon points="26,6 26,10 37.172,10 23.172,24 26,26.828 40,12.828 40,24 44,24 44,6  "/></g></svg></a>
+        </nav>
+    </div>
+    
+    <div style="height: 1rem;"></div>
+    
+    <div class="projects" id="projects">
+        <h1 class="white-text font-fira-code submain-title">Projects:</h1>
+        <div class="projects-display">
+            <div class="project">
+                <a href="https://github.com/tadaHrd/holdable-capslock" class="project-name"><h2>Holdable CapsLock</h2></a>
+                <img src="images/holdable-capslock/text.png">
+                <p class="description">
+                    This app lets you hold Caps Lock if you hold it for more that 0.3 seconds or the time specified.
+                </p>
+            </div>
+            <div class="project">
+                <a href="https://github.com/tadaHrd/bfp-compiler" class="project-name"><h2>Brainfuck+ compiler</h2></a>
+                <a href="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" class="image-link">
+                    <img src="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" height="150px" width="auto">
+                </a>
+                <p class="description">
+                    This is a compiler written in Rust with trash code that compiles from Brainfuck+ to Brainfuck.
+                </p>
+            </div>
+            <div class="project">
+                <a href="https://github.com/tadaHrd/bfp-compiler" class="project-name"><h2>Brainfuck+ syntax</h2></a>
+                <a href="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" class="image-link">
+                    <img src="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" height="150px" width="auto">
+                </a>
+                <p class="description">
+                    This is a <a href="https://code.visualstudio.com/" class="link">VSCode</a> extension that gives you syntax highlighting for Brainfuck+
+                </p>
+                <button onclick="location.href = 'https://marketplace.visualstudio.com/items?itemName=TadaHrd.bfp-syntax'" class="link-to-run">Download it</button>
+            </div>
+            <div class="project">
+                <a href="https://github.com/tadaHrd/racing-game-build" class="project-name"><h2>Racing game</h2></a>
+                <a href="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" class="image-link">
+                    <img src="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" height="150px" width="auto">
+                </a>
+                <p class="description">
+                    This is a game made in <a href="" class="link">Godot</a>
+                </p>
+                <button onclick="location.href = 'try-it-online/racing-game/index.html'" class="link-to-run">Try it online</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

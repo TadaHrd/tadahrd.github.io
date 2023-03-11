@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+@media (min-width: 630px) {
+    .top {
+        display: flex;
+    }
+}
+.top {
+    box-sizing: border-box;
+    background-color: var(--top-color);
+    width: 100%;
+}
+
+.main-title {
+    margin: 0 1rem 00 1rem;
+    
+    padding: 1rem 0;
+    
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.top nav {
+    display: flex;
+}
+
+.navbar-item {
+    display: flex;
+    align-items: center;
+    
+    padding: 0 15px;
+    
+    color: var(--text-color);
+    font-size: larger;
+    text-decoration: none;
+    
+    font-family: "Segoe UI";
+    
+    transition: color 0.2s;
+}
+@media (max-width: 630px) {
+    .navbar-item {
+        margin-bottom: 1rem;
+    }
+}
+.navbar-item svg {
+    fill: var(--text-color);
+    transition: fill 0.2s;
+}
+.navbar-item:hover {
+    color: var(--nav-text-hover-color);
+}
+.navbar-item:hover svg {
+    fill: var(--nav-text-hover-color);
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+}
+
+.submain-title {
+    margin: auto;
+}
+
+.projects-display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    background-color: var(--card-color);
+    
+    border-radius: 10px;
+    
+    padding: 10px;
+    margin: 40px;
+}
+
+.project .description {
+    color: var(--desc-text-color);
+    font-family: "Segoe UI";
+    font-size: 1rem;
+}
+
+.project-name {
+    color: var(--text-color);
+    font-family: "Fira code";
+    text-decoration: underline;
+    font-size: 2rem;
+    text-align: center;
+    
+    margin: auto;
+    
+    transition: color 0.4;
+}
+.project-name:hover {
+    color: var(--text-hover-color);
+}
+
+.image-link:hover {
+    cursor: zoom-in;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--link-color);
+}
+.link:hover {
+    text-decoration: underline;;
+}
+
+.link-to-run {
+    font-family: "Fira code";
+    font-size: 16px;
+    
+    margin: 5px;
+    padding: 10px;
+    float: right;
+    
+    border: none;
+    border-radius: 5px;
+    
+    color: var(--text-color);
+    background-color: var(--link-color);
+}
+.link-to-run:hover {
+    cursor: pointer;
+    
+    color: var(--text-hover-color);
+    background-color: var(--dark-link-color);
+}

@@ -79,7 +79,7 @@ function compile_to_bf(input) {
           case "p":
             keyword = c;
             break;
-
+          case "\n":
           case " ":
             break;
 

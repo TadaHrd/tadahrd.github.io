@@ -18,6 +18,8 @@
     <title>TadaHrd main page</title>
 </head>
 <body class="bg-dark">
+    <div id="particles" style="position: fixed; height: 100%; width: 100%; pointer-events: none;"></div>
+
     <div class="top">
         <a href="#"><h1 class="main-title white-text font-fira-code">TadaHrd's page</h1></a>
         <nav>
@@ -41,13 +43,13 @@
                 <a href="https://github.com/tadaHrd/holdable-capslock" class="project-name"><h2>Holdable CapsLock</h2></a>
                 <img src="images/holdable-capslock/text.png">
                 <p class="description">
-                    This app lets you hold Caps Lock if you hold it for more that 0.3 seconds or the time specified.
+                    This app lets you hold Caps Lock if you hold it for more that 0.3 seconds or the time specified at the cost of performance.
                 </p>
             </div>
             <div class="project">
                 <a href="https://github.com/tadaHrd/bfp-compiler" class="project-name"><h2>Brainfuck+ compiler</h2></a>
-                <a href="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" class="image-link">
-                    <img src="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" height="150px" width="auto">
+                <a href="images/bfp/sample_code.png" class="image-link">
+                    <img src="images/bfp/sample_code.png">
                 </a>
                 <p class="description">
                     This is a compiler written in Rust with trash code that compiles from Brainfuck+ to Brainfuck.
@@ -55,8 +57,8 @@
             </div>
             <div class="project">
                 <a href="https://github.com/tadaHrd/bfp-compiler" class="project-name"><h2>Brainfuck+ syntax</h2></a>
-                <a href="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" class="image-link">
-                    <img src="https://raw.githubusercontent.com/tadaHrd/bfp-syntax/master/images/sample_code.png" height="150px" width="auto">
+                <a href="images/bfp/sample_code.png" class="image-link">
+                    <img src="images/bfp/sample_code.png">
                 </a>
                 <p class="description">
                     This is a <a href="https://code.visualstudio.com/" class="link">VSCode</a> extension that gives you syntax highlighting for Brainfuck+
@@ -66,7 +68,7 @@
             <div class="project">
                 <a href="https://github.com/tadaHrd/racing-game-build" class="project-name"><h2>Racing game</h2></a>
                 <a href="images/racing-game/gameplay.png" class="image-link">
-                    <img src="images/racing-game/gameplay.png" height="150px" width="auto">
+                    <img src="images/racing-game/gameplay.png">
                 </a>
                 <p class="description">
                     This is a game made in <a href="" class="link">Godot</a>
@@ -76,7 +78,7 @@
             <div class="project">
                 <a href="https://github.com/tadaHrd/Shitty-keyboard-tester" class="project-name"><h2>Shitty keyboard tester</h2></a>
                 <a href="images/shitty-keyboard-tester/usage.png" class="image-link">
-                    <img src="images/shitty-keyboard-tester/usage.png" height="150px" width="auto">
+                    <img src="images/shitty-keyboard-tester/usage.png">
                 </a>
                 <p class="description">
                     This is a game made in <a href="" class="link">Godot</a>
@@ -85,5 +87,10 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+
+    <script src="js/weather.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

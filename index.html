@@ -18,6 +18,17 @@
     <title>TadaHrd main page</title>
 </head>
 <body class="bg-dark">
+    <div id="image-popup" style="position: fixed; width: 100%; height: 100%; display: none; backdrop-filter: blur(5px);">
+        <div style="position: inherit; width: 80%; height: 80%; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: whitesmoke;">
+            <div style="position: relative; left: calc( 100% - 50px );">
+                <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" fill="none">
+                    <path d="M19 5L4.99998 19M5.00001 5L19 19" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <img style="position: inherit; top: 50%; left: 50%; transform: translate(-50%, -50%); width: auto; max-width: 90%; max-height: 90%; height: auto;">
+        </div>
+    </div>
+
     <div id="particles" style="position: fixed; height: 100%; width: 100%; pointer-events: none;"></div>
 
     <div class="top">
@@ -41,27 +52,22 @@
             </div>
             <div class="project">
                 <a href="https://github.com/tadaHrd/holdable-capslock" class="project-name"><h2>Holdable CapsLock</h2></a>
-                <a href="images/holdable-capslock/text.png" class="image-link">
-                    <img src="images/holdable-capslock/text.png" style="max-width: 500px; max-height: 54px;">
-                </a>
+                <img src="images/holdable-capslock/text.png" class="image-popup" style="max-width: 500px; max-height: 54px;">
                 <p class="description">
                     This app lets you hold Caps Lock if you hold it for more that 0.3 seconds<br> or the time specified at the cost of performance.
                 </p>
             </div>
             <div class="project">
                 <a href="https://github.com/tadaHrd/bfp-compiler" class="project-name"><h2>Brainfuck+ compiler</h2></a>
-                <a href="images/bfp/sample_code.png" class="image-link">
-                    <img src="images/bfp/sample_code.png">
-                </a>
+                <img src="images/bfp/sample_code.png" class="image-popup">
                 <p class="description">
-                    This is a compiler written in Rust with trash code that compiles from Brainfuck+ to Brainfuck.
+                    This is a compiler written in Rust with trash code that compiles from Brainfuck+ to Brainfuck. Now rewritten in JavaScript.
                 </p>
+                <button onclick="location.href = 'try-it-online/bfp-compiler/index.html'" class="link-to-run">Try it online</button>
             </div>
             <div class="project">
                 <a href="https://github.com/tadaHrd/bfp-compiler" class="project-name"><h2>Brainfuck+ syntax</h2></a>
-                <a href="images/bfp/sample_code.png" class="image-link">
-                    <img src="images/bfp/sample_code.png">
-                </a>
+                    <img src="images/bfp/sample_code.png" class="image-popup">
                 <p class="description">
                     This is a <a href="https://code.visualstudio.com/" class="link">VSCode</a> extension that gives you syntax highlighting for Brainfuck+
                 </p>
@@ -69,9 +75,7 @@
             </div>
             <div class="project">
                 <a href="https://github.com/tadaHrd/racing-game-build" class="project-name"><h2>Racing game</h2></a>
-                <a href="images/racing-game/gameplay.png" class="image-link">
-                    <img src="images/racing-game/gameplay.png">
-                </a>
+                <img src="images/racing-game/gameplay.png" class="image-popup">
                 <p class="description">
                     This is a game made in <a href="" class="link">Godot</a>
                 </p>
@@ -79,9 +83,7 @@
             </div>
             <div class="project">
                 <a href="https://github.com/tadaHrd/Shitty-keyboard-tester" class="project-name"><h2>Shitty keyboard tester</h2></a>
-                <a href="images/shitty-keyboard-tester/usage.png" class="image-link">
-                    <img src="images/shitty-keyboard-tester/usage.png">
-                </a>
+                <img src="images/shitty-keyboard-tester/usage.png" class="image-popup">
                 <p class="description">
                     This is a game made in <a href="" class="link">Godot</a>
                 </p>
@@ -90,9 +92,7 @@
         </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-
-    <script src="js/weather.js"></script>
+    <script src="js/imagePopup.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

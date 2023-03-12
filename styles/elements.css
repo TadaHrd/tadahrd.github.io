@@ -118,19 +118,19 @@
 }
 
 @media (max-width: 630px) {
-    .project a img {
+    .project .image-popup {
         width: 100%;
         height: auto;
     }
 }
 @media (min-width: 631px) {
-    .project a img {
+    .project .image-popup {
         width: auto;
         height: 200px;
     }
 }
 
-.image-link:hover {
+.image-popup:hover {
     cursor: zoom-in;
 }
 

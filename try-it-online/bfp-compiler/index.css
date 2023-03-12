@@ -1,0 +1,13 @@
+* {
+    font-family: "Fira code";
+    color: var(--text-color);
+    background-color: var(--background-color);
+}
+textarea {
+    font-size: larger;
+}
+button {
+    font-size: large;
+    background-color: var(--text-color);
+    color: #000;
+}

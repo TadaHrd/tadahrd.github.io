@@ -13,7 +13,7 @@
         const popup = document.querySelector("#image-popup");
         const popupImage = popup.querySelector("img");
 
-        document.body.style.overflow = "scroll";
+        document.body.style.overflowY = "scroll";
 
         popup.style.display = "none";
         popupImage.src = "";

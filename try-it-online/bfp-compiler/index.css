@@ -4,7 +4,10 @@
     background-color: var(--background-color);
 }
 textarea {
-    font-size: larger;
+    font-size: medium;
+
+    width: 800px;
+    height: 300px;
 }
 button {
     font-size: large;

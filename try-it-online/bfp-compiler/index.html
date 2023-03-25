@@ -22,16 +22,23 @@
 
     <h2>This is experimental and may have bugs / be outdated!</h2>
 
-    <h3>Run your code at <a href="https://tio.run/#brainfuck">https://tio.run/#brainfuck</a></h3>
-
     <button id="compile-button" onclick="submit()">Compile</button>
     <br>
     <textarea type="text" name="code" id="code-input" placeholder="Code for the compiler..."></textarea>
+    <br>
+    <textarea type="text" name="args" id="args" placeholder="Arguments (for the ',' function)"></textarea>
 
     <h3>Compiled code:</h3>
 
     <textarea type="text" name="output" id="code-output" placeholder="This is the output"></textarea>
 
+    <h3>Run your code here:</h3>
+
+    <button id="run-button">Run</button>
+    <br>
+    <textarea type="text" name="output" id="output" placeholder="This is the executed output"></textarea>
+
     <script src="bfp-compiler.js"></script>
+    <script src="bf-interpreter.js"></script>
 </body>
 </html>

@@ -11,8 +11,6 @@ const ERRORS = [
 function submit() {
     const codeInput = document.querySelector("#code-input");
 
-    console.log(codeInput.value);
-
     let output = compile_to_bf(codeInput.value);
     document.querySelector("#code-output").value = output;
 }
@@ -135,17 +133,22 @@ function compile_to_bf(input) {
                     is_escape_seq = false;
                     is_string_empty = false;
                     break;
+
                 default:
-                    console.log(ERRORS[3]);
+                    console.error(ERRORS[3]);
                     return ERRORS[3];
             }
         } else {
             switch (c) {
+                case "\\":
+                  is_escape_seq = true;
+                  break;
+
                 case '"':
                     is_string = false;
                     keyword = "";
                     if (is_string_empty) {
-                        console.log(ERRORS[2]);
+                        console.error(ERRORS[2]);
                         return ERRORS[2];
                     }
                     break;
@@ -174,23 +177,23 @@ function compile_to_bf(input) {
       }
     }
     if (is_ml_comment) {
-        console.log(ERRORS[0]);
+        console.error(ERRORS[0]);
         return ERRORS[0];
     }
     if (is_string) {
-        console.log(ERRORS[1]);
+        console.error(ERRORS[1]);
         return ERRORS[1];
     }
     if (opening_square_bracket_count > closing_square_bracket_count) {
-        console.log(ERRORS[4]);
+        console.error(ERRORS[4]);
         return ERRORS[4];
     }
     if (opening_square_bracket_count < closing_square_bracket_count) {
-        console.log(ERRORS[5]);
+        console.error(ERRORS[5]);
         return ERRORS[5];
     }
     if (out.length == 0) {
-        console.log(ERRORS[6]);
+        console.error(ERRORS[6]);
         return ERRORS[6];
     }
     return out;

@@ -1,163 +1,163 @@
 * {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 @media (min-width: 630px) {
-    .top {
-        display: flex;
-    }
+  .top {
+    display: flex;
+  }
 }
 .top {
-    box-sizing: border-box;
-    background-color: var(--top-color);
-    width: 100%;
+  box-sizing: border-box;
+  background-color: var(--top-color);
+  width: 100%;
 }
 
 .main-title {
-    margin: 0 1rem 00 1rem;
+  margin: 0 1rem 00 1rem;
 
-    padding: 1rem 0;
+  padding: 1rem 0;
 
-    font-size: 2.5rem;
-    text-align: center;
+  font-size: 2.5rem;
+  text-align: center;
 }
 
 .top nav {
-    display: flex;
+  display: flex;
 }
 
 .navbar-item {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    padding: 0 15px;
+  padding: 0 15px;
 
-    color: var(--text-color);
-    font-size: larger;
-    text-decoration: none;
+  color: var(--text-color);
+  font-size: larger;
+  text-decoration: none;
 
-    font-family: "Segoe UI";
+  font-family: "Segoe UI";
 
-    transition: color 0.2s;
+  transition: color 0.2s;
 }
 @media (max-width: 630px) {
-    .navbar-item {
-        margin-bottom: 1rem;
-    }
+  .navbar-item {
+    margin-bottom: 1rem;
+  }
 }
 .navbar-item svg {
-    fill: var(--text-color);
-    transition: fill 0.2s;
+  fill: var(--text-color);
+  transition: fill 0.2s;
 }
 .navbar-item:hover {
-    color: var(--nav-text-hover-color);
+  color: var(--nav-text-hover-color);
 }
 .navbar-item:hover svg {
-    fill: var(--nav-text-hover-color);
+  fill: var(--nav-text-hover-color);
 }
 
 .projects {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .submain-title {
-    margin: auto;
+  margin: auto;
 }
 
 .projects-display {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .project {
-    background-color: var(--card-color);
+  background-color: var(--card-color);
 
-    border-radius: 10px;
+  border-radius: 10px;
 
-    padding: 10px;
-    margin: 20px;
-    box-shadow: 0 0 20px 10px #0000002f;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: 0 0 20px 10px #0000002f;
 }
 
 .project .description {
-    color: var(--desc-text-color);
-    font-family: "Segoe UI";
-    font-size: 1rem;
+  color: var(--desc-text-color);
+  font-family: "Segoe UI";
+  font-size: 1.2rem;
 }
 
 .project-name {
-    color: var(--text-color);
-    font-family: "Fira code";
-    text-decoration: underline;
-    text-align: center;
+  color: var(--text-color);
+  font-family: "Fira code";
+  text-decoration: underline;
+  text-align: center;
 
-    margin: auto;
+  margin: auto;
 
-    transition: color 0.1s;
+  transition: color 0.1s;
 }
 .project-name:hover {
-    color: var(--text-hover-color);
+  color: var(--text-hover-color);
 }
 @media (min-width: 426px) and (max-width: 630px) {
-    .project-name {
-        font-size: 1rem;
-    }
+  .project-name {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 631px) {
-    .project-name {
-        font-size: 2rem;
-    }
+  .project-name {
+    font-size: 1.5rem;
+  }
 }
 
 .project-name h2 {
-    word-break: break-all;
+  word-break: break-word;
 }
 
 @media (max-width: 630px) {
-    .project .image-popup {
-        width: 100%;
-        height: auto;
-    }
+  .project .image-popup {
+    width: 100%;
+    height: auto;
+  }
 }
 @media (min-width: 631px) {
-    .project .image-popup {
-        width: auto;
-        height: 200px;
-    }
+  .project .image-popup {
+    width: auto;
+    height: 200px;
+  }
 }
 
 .image-popup:hover {
-    cursor: zoom-in;
+  cursor: zoom-in;
 }
 
 .link {
-    text-decoration: none;
-    color: var(--link-color);
+  text-decoration: none;
+  color: var(--link-color);
 }
 .link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 .link-to-run {
-    font-family: "Fira code";
-    font-size: 16px;
+  font-family: "Fira code";
+  font-size: 16px;
 
-    margin: 5px;
-    padding: 10px;
-    float: right;
+  margin: 5px;
+  padding: 10px;
+  float: right;
 
-    border: none;
-    border-radius: 5px;
+  border: none;
+  border-radius: 5px;
 
-    color: var(--text-color);
-    background-color: var(--link-color);
+  color: var(--text-color);
+  background-color: var(--link-color);
 }
 .link-to-run:hover {
-    cursor: pointer;
+  cursor: pointer;
 
-    color: var(--text-hover-color);
-    background-color: var(--dark-link-color);
+  color: var(--text-hover-color);
+  background-color: var(--dark-link-color);
 }

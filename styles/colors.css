@@ -1,19 +1,21 @@
 :root {
-    --text-color: whitesmoke;
-    --text-hover-color: rgb(152, 152, 152);
-    --desc-text-color: rgb(197, 197, 197);
-    --nav-text-hover-color: lime;
-    --link-color: rgb(45, 118, 201);
-    --dark-link-color: rgb(21, 65, 114);
-    --bg-color: rgb(50, 50, 50);
-    --top-color: rgb(20, 20, 20);
-    --card-color: rgb(31, 31, 31);
+  --text-color: whitesmoke;
+  --text-hover-color: rgb(152, 152, 152);
+  --desc-text-color: rgb(197, 197, 197);
+  --nav-text-hover-color: lime;
+  --link-color: rgb(45, 118, 201);
+  --dark-link-color: rgb(21, 65, 114);
+  --badge-color: #e7c714;
+
+  --bg-color: rgb(50, 50, 50);
+  --top-color: rgb(20, 20, 20);
+  --card-color: rgb(31, 31, 31);
 }
 
 .bg-dark {
-    background-color: var(--bg-color);
+  background-color: var(--bg-color);
 }
 
 .white-text {
-    color: var(--text-color);
+  color: var(--text-color);
 }

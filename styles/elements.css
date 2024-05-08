@@ -118,13 +118,13 @@
 }
 
 @media (max-width: 630px) {
-  .project .image-popup {
+  .project .image {
     width: 100%;
     height: auto;
   }
 }
 @media (min-width: 631px) {
-  .project .image-popup {
+  .project .image {
     width: auto;
     height: 200px;
   }

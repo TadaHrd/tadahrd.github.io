@@ -130,6 +130,10 @@
   }
 }
 
+.project .image {
+  background-color: white;
+}
+
 .image-popup:hover {
   cursor: zoom-in;
 }
